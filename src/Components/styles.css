@@ -1,0 +1,5 @@
+@media  (max-width: 767px) {
+    .negative-margin{
+        margin-top: -20px;
+    }
+}
