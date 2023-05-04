@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/logoes.png'
 import { NavLink } from 'react-router-dom'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import "./styles.css"
