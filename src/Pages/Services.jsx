@@ -3,18 +3,18 @@ import NavbarComponent from '../Components/NavbarComponent'
 import FooterComponent from '../Components/FooterComponent'
 import BookAnAppointment from '../Components/Appointment/BookAnAppointment'
 import Subscribe from '../Components/Subscribe/Subscribe'
-import Testimonials from '../Components/Testimonials/Testimonials'
 import LandingComponent from '../Components/LandingComponent'
-import { services } from '../constants'
+import { services, servicesTwo, serviceTestimonial } from '../constants'
+import Testimonial from '../Components/Testimonial/Testimonial'
 
 const Services = (props) => {
   return (
     <>
     <NavbarComponent active={props.active}/>
     <LandingComponent data={services}/>
-    <div>Services</div>
-    <BookAnAppointment/>
-    <Testimonials/>
+    <LandingComponent data={servicesTwo} reverse={true}/>
+    <BookAnAppointment theme={"light"}/>
+    <Testimonial title={serviceTestimonial.title} data={serviceTestimonial.cardDetail}/>
     <Subscribe/>
     <FooterComponent/>
     </>

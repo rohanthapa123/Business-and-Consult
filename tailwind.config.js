@@ -5,12 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily:{
+      'mulish': ['mulish','sans-serif'],
+      'ubuntu':['ubuntu','serif']
+    },
+    extend: {
+      listStyleImage: {
+        Vector: 'url("./src/assets/Vector.png")',
+      },
+    },
   },
   plugins: [
     {
       tailwindcss: {},
-    autoprefixer: {},
+      autoprefixer: {},
     },
   ],
 }
