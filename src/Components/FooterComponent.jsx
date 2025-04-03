@@ -1,8 +1,7 @@
-import React from 'react'
-import logo from '../assets/logo.png'
-import { FiTwitter, FiInstagram, FiFacebook } from 'react-icons/fi'
 import { AiOutlineLinkedin } from 'react-icons/ai'
+import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi'
 import { NavLink } from 'react-router-dom'
+import logo from '../assets/logo.png'
 import "./styles.css"
 const FooterComponent = () => {
     return (
@@ -54,8 +53,10 @@ const FooterComponent = () => {
                         </div>
                     </div>
                 </div>
-                <div className="lower text-center pt-4 pb-10">
-                    <p className='text-[14px] select-none'>@ jo-jean Imon-ita. All right reserved. Designed by AMANi Art</p>
+                <div className="lower text-center pt-4 pb-10 flex justify-center gap-20 items-center">
+                    <p className='text-[14px] select-none'>@rohanthapa. All right reserved. Designed by AMANi Art</p>
+                    <p>Developed by <a href="https://rohanthapa.com.np" target="_blank" rel="noreferrer" rel="dofollow" className='text-blue-200'>Rohan Thapa</a>
+                    </p>
                 </div>
             </footer>
         </>
